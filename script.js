@@ -50,6 +50,8 @@ button3.addEventListener("click", function () {
 });
 
 
+localStorage.setItem("visits", 5);
+let saved = localStorage.getItem("visits");
 
 
 
@@ -71,61 +73,3 @@ button3.addEventListener("click", function () {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-// // Score starts at zero by clicking the correct answer.
-// let score = 0;
-
-
-// // Tell if the answer has been answered
-// let answered = false;
-
-// // display datetime 
-// let d = new Date();
-// datetime.textContent = d.toLocaleString();
-
-
-
-// // Button 1
-// button1.addEventListener("click", function () {
-//     if (answered === false){
-//        answer.textContent = "Incorrect!";
-//        answered = true;
-//     }
-// });
-
-// // Button 2
-// button2.addEventListener("click", function () {
-//        if (answered === false){
-//        answer.textContent = "Incorrect!";
-//        answered = true;
-//     }
-// });
-
-
-// // Button 3
-// button3.addEventListener("click", function () {
-//     if (answered === false){ 
-//        answer.textContent = "Correct!";
-//        score = score + 1;
-//        scoreInput.textContent= "Your score is: " + score;
-//        answered = true;
-//        }
-// });
-
-// // Button 4
-// button4.addEventListener("click", function () {
-//        if (answered === false){
-//        answer.textContent = "Incorrect!";
-//        answered = true;
-//     }
-// });
