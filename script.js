@@ -1,3 +1,4 @@
+// Get HTML element and stores them in variables
 let headline = document.getElementById("headline-1");
 let button1 = document.getElementById("b1");
 let button2 = document.getElementById("b2");
@@ -21,7 +22,7 @@ let card1 = document.getElementById("card-1");
 let card2 = document.getElementById("card-2");
 let card3 = document.getElementById("card-3");
 
-// Hide question 2 and 3 at start
+// Questions 2 and 3 hidden when quiz loads, making  question 1 visible
    card2.hidden = true;
    card3.hidden = true;
 
