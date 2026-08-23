@@ -2,12 +2,12 @@ let headline = document.getElementById("headline-1");
 let button1 = document.getElementById("b1");
 let button2 = document.getElementById("b2");
 let button3 = document.getElementById("b3");
-let BtnQtn2    = document.getElementById("b4");
-let BtnQtn22    = document.getElementById("b5");
-let BtnQtn23    = document.getElementById("b6");
-let BtnQtn3    = document.getElementById("b7");
-let BtnQtn32    = document.getElementById("b8");
-let BtnQtn33    = document.getElementById("b9");
+let BtnQtn2 = document.getElementById("b4");
+let BtnQtn22 = document.getElementById("b5");
+let BtnQtn23 = document.getElementById("b6");
+let BtnQtn3  = document.getElementById("b7");
+let BtnQtn32  = document.getElementById("b8");
+let BtnQtn33  = document.getElementById("b9");
 let answer = document.getElementById("ans");
 let datetime  = document.getElementById("date-time");
 let scoreInput = document.getElementById("score-1");
@@ -17,8 +17,13 @@ let winner2 = document.getElementById("winner-2");
 let buttonDisplay = document.getElementById("Btn-1");
 let resultsBtn = document.getElementById("result-1");
 let StartOverBtn = document.getElementById("tryBtn-1");
+let card1 = document.getElementById("card-1");
+let card2 = document.getElementById("card-2");
+let card3 = document.getElementById("card-3");
 
-"Your score is : 0 — Try again!";
+// Hide question 2 and 3 at start
+   card2.hidden = true;
+   card3.hidden = true;
 
 // display datetime 
    let d = new Date();
@@ -48,6 +53,9 @@ let StartOverBtn = document.getElementById("tryBtn-1");
  BtnQtn3.disabled  = false;
  BtnQtn32.disabled  = false;
  BtnQtn33.disabled  = false;
+ card1.hidden= false;
+ card2.hidden = true;
+ card3.hidden = true;
 }
 
 
@@ -72,6 +80,9 @@ let StartOverBtn = document.getElementById("tryBtn-1");
    button1.addEventListener("click", function () {
    answer.textContent = "Incorrect!";
    bodyColor.style.backgroundColor = "lightyellow";
+   
+     card1.hidden = true;
+     card2.hidden = false;
 });
 
 
@@ -79,6 +90,8 @@ let StartOverBtn = document.getElementById("tryBtn-1");
    button2.addEventListener("click", function () {
    answer.textContent = "Incorrect!";
    bodyColor.style.backgroundColor = "lightblue";
+     card1.hidden = true;
+     card2.hidden = false;
 });
 
 
@@ -91,6 +104,9 @@ let StartOverBtn = document.getElementById("tryBtn-1");
     // display winner picture
       winner.src="spain.jpg";
       winner.hidden = false;
+
+       card1.hidden = true;
+       card2.hidden = false;
     });
 
 
@@ -102,6 +118,9 @@ let StartOverBtn = document.getElementById("tryBtn-1");
    BtnQtn2.addEventListener("click", function () {
    answer.textContent = "Incorrect!";
    bodyColor.style.backgroundColor = "lightyellow";
+     card2.hidden = true;
+     card3.hidden = false;
+     
 });
 
 
@@ -114,6 +133,9 @@ let StartOverBtn = document.getElementById("tryBtn-1");
       winner.src="brazil.jpg";
       winner.hidden = false;
 
+     card2.hidden = true;
+     card3.hidden = false;
+
 });
 
 
@@ -121,6 +143,10 @@ let StartOverBtn = document.getElementById("tryBtn-1");
    BtnQtn23.addEventListener("click", function () {
     answer.textContent = "Incorrect!";
     bodyColor.style.backgroundColor = "lightblue";
+
+     card2.hidden = true;
+     card3.hidden = false;
+    
    });
 
 
@@ -137,6 +163,8 @@ let StartOverBtn = document.getElementById("tryBtn-1");
       winner.src="qatar.jpg";
       winner.hidden = false;
       resultPanel();
+      card3.hidden = true;
+    
 });
 
 
@@ -145,6 +173,7 @@ let StartOverBtn = document.getElementById("tryBtn-1");
     answer.textContent = "Incorrect!";
     bodyColor.style.backgroundColor = "lightyellow";
     resultPanel();
+      card3.hidden = true;
     });
     
 
@@ -154,6 +183,7 @@ let StartOverBtn = document.getElementById("tryBtn-1");
     answer.textContent = "Incorrect!";
     bodyColor.style.backgroundColor = "lightblue";
     resultPanel();
+      card3.hidden = true;
    });
 
      StartOverBtn.addEventListener("click", function (){
