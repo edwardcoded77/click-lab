@@ -1,0 +1,10 @@
+/* choice-list.css — stacks options as full-width targets. */
+/* This file is yours: change any line, or override it from style.css. */
+
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  /* width: 60rem; */
+}
+

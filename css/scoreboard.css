@@ -1,0 +1,14 @@
+/* scoreboard.css — a number that wants to be looked at. */
+
+.scoreboard {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 6px;
+  border: 1px solid #9fafcf;
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  background-color: #afa6a6;
+}
+

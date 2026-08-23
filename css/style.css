@@ -1,0 +1,12 @@
+
+.card {
+  border-radius: 0;
+}
+
+
+
+
+/* Forces the body to be at least 100% of the viewport height */
+.body {
+  min-height: 100vh;
+}

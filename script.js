@@ -1,69 +1,170 @@
+let headline = document.getElementById("headline-1");
 let button1 = document.getElementById("b1");
 let button2 = document.getElementById("b2");
 let button3 = document.getElementById("b3");
-let button4 = document.getElementById("b4");
+let BtnQtn2    = document.getElementById("b4");
+let BtnQtn22    = document.getElementById("b5");
+let BtnQtn23    = document.getElementById("b6");
+let BtnQtn3    = document.getElementById("b7");
+let BtnQtn32    = document.getElementById("b8");
+let BtnQtn33    = document.getElementById("b9");
 let answer = document.getElementById("ans");
 let datetime  = document.getElementById("date-time");
 let scoreInput = document.getElementById("score-1");
+let bodyColor = document.getElementById("my-body");
+let winner = document.getElementById("winner-1");
+let winner2 = document.getElementById("winner-2");
+let buttonDisplay = document.getElementById("Btn-1");
+let resultsBtn = document.getElementById("result-1");
+let StartOverBtn = document.getElementById("tryBtn-1");
+
+"Your score is : 0 — Try again!";
 
 // display datetime 
-let d = new Date();
-datetime.textContent = d.toLocaleString();
+   let d = new Date();
+   datetime.textContent = d.toLocaleString();
 
 
 // Score starts at zero by clicking the correct answer.
-let score = 0;
+ let score = 0;
 
 
-// Track whether the question was answered
- let answered = false;
+
+ // This reset everything back 
+ function resetBtnfunctn(){
+ score = 0;
+ resultsBtn.hidden = true;
+ answer.textContent = "Answer";
+ scoreInput.textContent = "Your score";
+ winner.hidden = true;
+ winner2.hidden = true;
+ bodyColor.style.backgroundColor = "";
+ button1.disabled  = false;
+ button2.disabled  = false;
+ button3.disabled  = false;
+ BtnQtn2.disabled  = false;
+ BtnQtn22.disabled  = false;
+ BtnQtn23.disabled  = false;
+ BtnQtn3.disabled  = false;
+ BtnQtn32.disabled  = false;
+ BtnQtn33.disabled  = false;
+}
+
+
+ // function to keep track of the scores
+ function resultPanel() {
+     if (score === 0){
+     scoreInput.textContent = "Your Score is : 0 ";
+     } else if (score === 1) {
+       scoreInput.textContent = "Your Score is : 1 ";
+   } else if (score === 2) {
+       scoreInput.textContent = "Your Score is : 2 ";
+}  else if (score === 3){
+       scoreInput.textContent = "Your Score is : 3 ";
+  }
+  resultsBtn.hidden = false;
+  }
+
+
+// Question 1 //
 
 // Button 1
-button1.addEventListener("click", function () {
-  if (answered === false) {
-      answer.textContent = "Incorrect!";
-      answered = true;
-    }
-
+   button1.addEventListener("click", function () {
+   answer.textContent = "Incorrect!";
+   bodyColor.style.backgroundColor = "lightyellow";
 });
+
 
 // Button 2
-button2.addEventListener("click", function () {
-   if (answered === false) {
-         answer.textContent = "Incorrect!";
-         answered = true;
-    }
+   button2.addEventListener("click", function () {
+   answer.textContent = "Incorrect!";
+   bodyColor.style.backgroundColor = "lightblue";
 });
+
 
 // Button 3
-button3.addEventListener("click", function () {
-    if (answered === false) {
-       answer.textContent = "Correct!";
-       score = score + 1;
-       scoreInput.textContent = "Your score is: " + score; 
-        answered = true;
-
-        console.log("answered:", answered);
-        console.log("score:", score);
-    }
+    button3.addEventListener("click", function () {
+    answer.textContent = "Correct!";
+    score = score + 1;
+    bodyColor.style.backgroundColor = "lightgrey";
     
+    // display winner picture
+      winner.src="spain.jpg";
+      winner.hidden = false;
+    });
+
+
+
+
+// Question 2 //
+
+// Button 2
+   BtnQtn2.addEventListener("click", function () {
+   answer.textContent = "Incorrect!";
+   bodyColor.style.backgroundColor = "lightyellow";
 });
 
+
+// Button 22
+   BtnQtn22.addEventListener("click", function () {
+    answer.textContent = "Correct!";
+    score = score  + 1;
+    bodyColor.style.backgroundColor = "lightgrey";
+   // display winner picture
+      winner.src="brazil.jpg";
+      winner.hidden = false;
+
+});
+
+
+// Button 23
+   BtnQtn23.addEventListener("click", function () {
+    answer.textContent = "Incorrect!";
+    bodyColor.style.backgroundColor = "lightblue";
+   });
+
+
+
+// Question 3 //
+
+// Button 3
+   BtnQtn3.addEventListener("click", function () {
+   answer.textContent = "Correct!";
+   score = score  + 1;
+   bodyColor.style.backgroundColor = "lightgrey";
+
+     // display winner picture
+      winner.src="qatar.jpg";
+      winner.hidden = false;
+      resultPanel();
+});
+
+
+// Button 32
+   BtnQtn32.addEventListener("click", function () {
+    answer.textContent = "Incorrect!";
+    bodyColor.style.backgroundColor = "lightyellow";
+    resultPanel();
+    });
+    
+
+
+// Button 33
+   BtnQtn33.addEventListener("click", function () {
+    answer.textContent = "Incorrect!";
+    bodyColor.style.backgroundColor = "lightblue";
+    resultPanel();
+   });
+
+     StartOverBtn.addEventListener("click", function (){
+      resetBtnfunctn();
+  });
+     
+
+ // })
 
 localStorage.setItem("visits", 5);
 let saved = localStorage.getItem("visits");
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
