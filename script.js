@@ -22,6 +22,7 @@ let card1 = document.getElementById("card-1");
 let card2 = document.getElementById("card-2");
 let card3 = document.getElementById("card-3");
 
+
 // Questions 2 and 3 hidden when quiz loads, making  question 1 visible
    card2.hidden = true;
    card3.hidden = true;
@@ -34,7 +35,7 @@ let card3 = document.getElementById("card-3");
 // Score starts at zero by clicking the correct answer.
  let score = 0;
 
-
+   
 
  // This reset everything back 
  function resetBtnfunctn(){
@@ -71,8 +72,10 @@ let card3 = document.getElementById("card-3");
 }  else if (score === 3){
        scoreInput.textContent = "Your Score is : 3 ";
   }
-  resultsBtn.hidden = false;
+      resultsBtn.hidden = false;
   }
+
+
 
 
 // Question 1 //
@@ -80,7 +83,7 @@ let card3 = document.getElementById("card-3");
 // Button 1
    button1.addEventListener("click", function () {
    answer.textContent = "Incorrect!";
-   bodyColor.style.backgroundColor = "lightyellow";
+  //  bodyColor.style.backgroundColor = "lightyellow";
    
      card1.hidden = true;
      card2.hidden = false;
@@ -90,7 +93,7 @@ let card3 = document.getElementById("card-3");
 // Button 2
    button2.addEventListener("click", function () {
    answer.textContent = "Incorrect!";
-   bodyColor.style.backgroundColor = "lightblue";
+  //  bodyColor.style.backgroundColor = "lightblue";
      card1.hidden = true;
      card2.hidden = false;
 });
@@ -100,7 +103,7 @@ let card3 = document.getElementById("card-3");
     button3.addEventListener("click", function () {
     answer.textContent = "Correct!";
     score = score + 1;
-    bodyColor.style.backgroundColor = "lightgrey";
+    // bodyColor.style.backgroundColor = "lightgrey";
     
     // display winner picture
       winner.src="spain.jpg";
@@ -118,7 +121,7 @@ let card3 = document.getElementById("card-3");
 // Button 2
    BtnQtn2.addEventListener("click", function () {
    answer.textContent = "Incorrect!";
-   bodyColor.style.backgroundColor = "lightyellow";
+  //  bodyColor.style.backgroundColor = "lightyellow";
      card2.hidden = true;
      card3.hidden = false;
      
@@ -129,7 +132,7 @@ let card3 = document.getElementById("card-3");
    BtnQtn22.addEventListener("click", function () {
     answer.textContent = "Correct!";
     score = score  + 1;
-    bodyColor.style.backgroundColor = "lightgrey";
+    // bodyColor.style.backgroundColor = "lightgrey";
    // display winner picture
       winner.src="brazil.jpg";
       winner.hidden = false;
@@ -143,7 +146,7 @@ let card3 = document.getElementById("card-3");
 // Button 23
    BtnQtn23.addEventListener("click", function () {
     answer.textContent = "Incorrect!";
-    bodyColor.style.backgroundColor = "lightblue";
+    // bodyColor.style.backgroundColor = "lightblue";
 
      card2.hidden = true;
      card3.hidden = false;
@@ -158,7 +161,7 @@ let card3 = document.getElementById("card-3");
    BtnQtn3.addEventListener("click", function () {
    answer.textContent = "Correct!";
    score = score  + 1;
-   bodyColor.style.backgroundColor = "lightgrey";
+  //  bodyColor.style.backgroundColor = "lightgrey";
 
      // display winner picture
       winner.src="qatar.jpg";
@@ -172,7 +175,7 @@ let card3 = document.getElementById("card-3");
 // Button 32
    BtnQtn32.addEventListener("click", function () {
     answer.textContent = "Incorrect!";
-    bodyColor.style.backgroundColor = "lightyellow";
+    // bodyColor.style.backgroundColor = "lightyellow";
     resultPanel();
       card3.hidden = true;
     });
@@ -182,7 +185,7 @@ let card3 = document.getElementById("card-3");
 // Button 33
    BtnQtn33.addEventListener("click", function () {
     answer.textContent = "Incorrect!";
-    bodyColor.style.backgroundColor = "lightblue";
+    // bodyColor.style.backgroundColor = "lightblue";
     resultPanel();
       card3.hidden = true;
    });
@@ -192,10 +195,44 @@ let card3 = document.getElementById("card-3");
   });
      
 
- // })
 
-localStorage.setItem("visits", 5);
-let saved = localStorage.getItem("visits");
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+// localStorage.setItem("visits", 5);
+// let saved = localStorage.getItem("visits");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
