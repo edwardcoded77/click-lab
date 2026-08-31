@@ -6,7 +6,39 @@
 
 
 
-/* Forces the body to be at least 100% of the viewport height */
-.body {
-  min-height: 100vh;
+
+/* #card-1 {
+ 
+  margin-top: 100px;
+  padding-top: 0.5px;
+} */
+
+#my-body {
+  /* * Forces the body to be at least 100% of the viewport height */
+    min-height: 100vh;
+    margin: 0;
+
+    /* background-image: url("../soccer.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+#tryBtn-1 {
+  background-color:rgb(143, 127, 106);
+}
+
+
+#ans {
+  color:white;
+}
+
+#about-1{
+  color:rgb(241, 232, 232);
+}
+
+#winner-1{
+  margin-left: 20px;
+  margin-top: .2px;
 }
