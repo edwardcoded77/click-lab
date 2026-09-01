@@ -39,7 +39,7 @@ let footerHeadline = document.getElementById("footer-headline");
 // How many visitors on the page 
 let visit  = Number(localStorage.getItem("visits")) || 0;
 visit  =  visit +  1;
-localStorage.setItem("visits", visit); 
+localStorage.setItem("visits", visit ); 
 footerHeadline.textContent = "How many visit : " + visit;
  
  
