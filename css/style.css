@@ -36,15 +36,17 @@
 
 .footer-class{
   position: relative;
-  left: -850px;
-  top: -240px;
+  /* left: -850px; */
+  top: -220px;
   text-align: center; */
  
   
 }
 
 #footer-headline{
-  color:white;
+  color:rgb(255, 255, 255);
+  /* font-weight:10;
+  font-size: 50px; */
  
 }
 
@@ -61,7 +63,9 @@
   color:rgb(241, 232, 232);
 }
 
-#winner-1{
-  margin-left: 20px;
-  margin-top: .2px;
+.winner-class{
+display: flex;
+justify-content: center;
+margin-top: -40px;
+  
 }
