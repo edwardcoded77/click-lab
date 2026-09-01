@@ -36,12 +36,13 @@ let footerHeadline = document.getElementById("footer-headline");
 // Score starts at zero by clicking the correct answer.
  let score = 0;
 
-// localStorage.setItem("visits", 5);
-let visit  = localStorage.getItem("visits");
-
- footerHeadline.textContent = "How many " + visit
- visit  =  visit +  1;
- localStorage.setItem("visits", visit);  
+// How many visitors on the page 
+let visit  = Number(localStorage.getItem("visits")) || 0;
+visit  =  visit +  1;
+localStorage.setItem("visits", visit); 
+footerHeadline.textContent = "How many  visit : " + visit;
+ 
+ 
 
 
 

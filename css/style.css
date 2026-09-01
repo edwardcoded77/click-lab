@@ -25,6 +25,12 @@
     background-attachment: fixed; */
 }
 
+
+.footer-class{
+  margin-left: 5px;
+}
+
+
 #tryBtn-1 {
   background-color:rgb(143, 127, 106);
 }
