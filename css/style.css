@@ -1,35 +1,52 @@
 
 .card {
   border-radius: 0;
+ 
+}
+
+.flex-row {
+  
+   min-height: 800px;
+    width: 400%;
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-sizing: border-box;
 }
 
 
+#about-1 {
+  color:black;
+}
 
-
-
-/* #card-1 {
- 
-  margin-top: 100px;
-  padding-top: 0.5px;
-} */
 
 #my-body {
   /* * Forces the body to be at least 100% of the viewport height */
     min-height: 100vh;
     margin: 0;
 
-    /* background-image: url("../soccer.jpg");
+    background-image: url("../soccer.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed; */
+    background-attachment: fixed;
 }
 
 
 .footer-class{
-  margin-left: 5px;
+  position: relative;
+  left: -850px;
+  top: -240px;
+  text-align: center; */
+ 
+  
 }
 
+#footer-headline{
+  color:white;
+ 
+}
 
 #tryBtn-1 {
   background-color:rgb(143, 127, 106);

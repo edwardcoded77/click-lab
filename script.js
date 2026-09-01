@@ -40,7 +40,7 @@ let footerHeadline = document.getElementById("footer-headline");
 let visit  = Number(localStorage.getItem("visits")) || 0;
 visit  =  visit +  1;
 localStorage.setItem("visits", visit); 
-footerHeadline.textContent = "How many  visit : " + visit;
+footerHeadline.textContent = "How many visit : " + visit;
  
  
 
@@ -144,7 +144,7 @@ footerHeadline.textContent = "How many  visit : " + visit;
     score = score  + 1;
     bodyColor.style.backgroundColor = "lightgrey";
    // display winner picture
-      winner.src="brazil.jpg";
+      winner.src="brazil01.jpg";
       winner.hidden = false;
 
      card2.hidden = true;
